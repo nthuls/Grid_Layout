@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 120px;
+}
+header,
+footer,
+main,
+aside,
+nav{
+background-color: beige;
+color: black;
+padding: 20px;
+border: black 1px solid;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: content;
+}
+aside{
+    grid-area: sidebar;
+}
+footer{
+    grid-area: footer;
+}
